@@ -1,0 +1,11 @@
+.cards__list {
+  @extend %list;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  .cards__item {
+    flex-basis: calc(100% - 30px) / 3;
+  }
+}

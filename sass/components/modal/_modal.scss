@@ -1,0 +1,97 @@
+.modal {
+  opacity: 1;
+  height: 610px;
+  max-width: 450px;
+  width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    height: 581px;
+    max-width: 528px;
+    width: 100%;
+  }
+
+  padding: 8px;
+  background-color: $background;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transition: transform $transit-time $transit-function, opacity $transit-time $transit-function;
+}
+.modal__title {
+  margin: 0 auto 12px;
+  padding: 0;
+  max-width: 370px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 448px;
+    width: 100%;
+    line-height: 1.15;
+  }
+}
+
+.policy {
+  margin: 0 auto 30px auto;
+  display: flex;
+  align-items: center;
+}
+.policy__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.policy__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.15;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  letter-spacing: 0.03em;
+  color: $text;
+}
+.policy__link {
+  text-decoration: underline;
+  color: $decorative-color;
+}
+.policy > .policy__icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid $title;
+  border-radius: 2px;
+}
+.policy__checkbox:checked + .policy__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: transparent;
+  background-color: $decorative-color;
+  background-image: url('../../../images/icons/icon-check.svg'),
+    url('../images/icons/icon-check.svg');
+  background-size: contain;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+}

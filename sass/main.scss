@@ -1,0 +1,52 @@
+// variables
+@import './utils/vars';
+@import './utils/placeholders.scss';
+@import './base/normalize';
+// page header
+@import './components/header/header';
+@import './components/header/logo';
+@import './components/header/site-nav';
+@import './components/header/contacts';
+// mobile header
+@import './components/mobile-menu/mobile-menu';
+@import './components/mobile-menu/mobile-menu-container';
+@import './components/mobile-menu/mobile-socials';
+@import './components/mobile-menu/mobile-contacts';
+@import './components/mobile-menu/mobile-nav';
+// hero block
+@import './components/hero/hero';
+@import './components/hero/hero-button';
+// features section
+@import './components/features/features';
+// works section
+@import './components/works/works';
+// team section
+@import './components/team/team';
+@import './components/team/teammate';
+// clients section
+@import './components/clients/clients';
+// page footer
+@import './components/footer/footer';
+@import './components/footer/address';
+@import './components/footer/socials';
+@import './components/footer/form';
+// modal
+@import './components/modal/backdrop';
+@import './components/modal/modal';
+@import './components/modal/close';
+@import './components/modal/modal-send-btn';
+@import './components/modal/modal-form-fields';
+@import './components/modal/comment';
+// portfolio page
+@import './components/portfolio/filter';
+@import './components/portfolio/project-set';
+@import './components/portfolio/project';
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: $background;
+  color: $text;
+}
+body.modal-open {
+  overflow: hidden;
+}

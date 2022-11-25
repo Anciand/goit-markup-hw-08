@@ -1,0 +1,68 @@
+/* delete image margin */
+%img {
+  display: block;
+  max-width: 100%;
+}
+/* styles for lists */
+%list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+/* hide logical headers */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+/* all section paddings */
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.section__title {
+  margin: 0 0 50px 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+/* special container class */
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  /* outline: 2px solid red; */
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
