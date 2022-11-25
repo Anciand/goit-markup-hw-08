@@ -35,6 +35,16 @@
       margin-right: 8px;
       fill: currentColor;
     }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      &__icon--tablet-envelope {
+        width: 14px;
+        height: 10px;
+      }
+      &__icon--tablet-smartphone {
+        width: 10px;
+        height: 14px;
+      }
+    }
   }
 }
 
